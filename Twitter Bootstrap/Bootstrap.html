@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Boostrap Starter Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+    <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+	  <title>Boostrap Starter Page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=bag5DnXxO9a8CBecOg6OB0zHPp78YKDw"></script>
 </head>
 <body>
-  <!-- this is the nav bar -->
+  <!-- start header -->
   <header>
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
 
-          <a href="bootstrap.html" class="pull-left visible-ms visible-lg">
+          <a href="bootstrap.html" class="pull-left visible-md visible-lg">
           <div id="logo-img"></div>
 
           <div class="navbar-brand">
@@ -57,22 +62,85 @@
           </div><!-- .collapse .navbar-collapse -->
       </div> <!-- .container -->
     </nav><!-- .header-nav -->
-  </header>
+  </header> 
+  <!-- end header -->
 
-  <!-- this is the container-->
-  <h1>Hello Coursera!</h1>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-4">Col 1</div>
-      <div class="col-lg-4">Col 2</div>
-      <div class="col-lg-4">Col 3</div>
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    410-602-5008
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+  <!-- start main-content -->
+  <div id="main-content" class="container">
+    <!-- start jumbotron-->
+    <div class="jumbotron">
+      <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
+    </div>
+    <!-- end jumbotron -->
+    <!-- start home-tiles -->
+    <div id="home-tiles" class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12" id="menu-tiles">
+        <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+      </div>
+      <!-- end home-tiles -->
+      <!-- start  single-category -->
+      <div class="col-md-4 col-sm-6 col-xs-12" id="single-category">
+        <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+      </div>
+      <!-- end single-category -->
+      <!-- start baidu-map -->
+      <div class="col-md-4 col-sm-6 col-xs-12" id="baidu-map">
+        <div id="map"><span>map</span></div>
+
+      </div>
+      <!-- end baidu-map -->
     </div>
   </div>
+  <!-- end main-content-->
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
-</body>
+  <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(117.101711,39.958309),13);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>
 </body>
 </html>
 
