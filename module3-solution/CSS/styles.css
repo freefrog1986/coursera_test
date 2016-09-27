@@ -7,37 +7,6 @@
 body {
   font-size: 100%;
 }
-.navbar-header{
-	border: 1px solid black;
-}
-.container {
-	border:1px solid green;
-}
-
-#header-nav {
-  background-color: rgb(230,150,95);
-  border-radius: 0;
-  border: 0;
-}
-
-.navbar-brand {
-  padding-top: 25px;
-}
-.navbar-brand h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(180,40,65);
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
-}
-
-.navbar-brand h1:hover, .navbar-brand h1:focus {
-  text-decoration: none;
-}
 
 h1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -46,34 +15,32 @@ h1 {
   font-size: 1.75em;
   margin-bottom: 15px;
 }
-h2 {
-	text-align: center;
-}
 
-.box-title{
+h2{
   font-family: Arial, Helvetica, sans-serif;
   float: right;
   font-size: 1.25em;
   text-align: center;
-  width: 150px;
-  padding: 2px;
+  width: 100px;
   border: 1px solid black;
+  padding:5px;
   margin-bottom: 5px;
 }
 
 p {
   font-family: Arial, Helvetica, sans-serif; 
   font-size: 1em;
-  padding: 10px;
+  margin: 10px;
   clear: both;
 }
 
-#Chicken, #Beef, #Sushi {
-	position: relative;
+.box {
 	height: 200px;
 	border: 1px solid black;
-	margin:0 auto 10px;
-	overflow: hidden;	
+	margin-top:10px;
+	margin: 10px;
+	overflow: hidden;
+	position: relative;
 }
 
 #Chicken {
@@ -88,17 +55,42 @@ p {
   background-color: rgb(225,0,255);
 }
 
-#box-chicken {
+#p1 {
 	background-color: rgb(40,50,228);
 	color: yellow;
 }
 
-#box-beef {
+#p2 {
 	background-color: rgb(200,70,80);
 	color: yellow;
 }
 
-#box-sushi {
+#p3 {
 	background-color: rgb(60,230,60);
 	color: black;
+}
+
+@media (min-width: 992px) {
+	#box-1, #box-2, #box-3{
+		float: left;
+		width: 33.33%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	#box-1, #box-2{
+		float: left;
+		width: 50%;
+	}
+	#box-3 {
+		float: left;
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px){
+	#box-1, #box-2, #box-3{
+		float: left;
+		width: 100%;
+	}
 }

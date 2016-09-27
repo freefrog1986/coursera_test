@@ -4,30 +4,66 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>2nd-week-submittion</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>module3-solution</title>
 </head>
 <body>
-  <h1>Our Menu</h1>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <h1>Food, LLC</h1>
+          </div>
+        </div><!-- end navbar-header -->
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li>
+                <a href="">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+              </li>
+              <li>
+                <a href="">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+              </li>
+              <li>
+                <a href="">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+              </li>
+              <li id="phone" class="hidden-xs">
+                <a href="tel:410-602-5008">
+                <span>410-602-5008</span></a><div>* We Deliver</div>
+              </li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+      </div><!-- end container -->
+    </nav><!-- end header-nav -->
+  </header><!--end header -->
 
-    <div id="box-1">
-      <div class="box" id="Chicken">
-    	 <h2 id="p1">Chicken</h2>
-    	 <p>The chicken (Gallus gallus domesticus) is a type of domesticated fowl, a subspecies of the red junglefowl. It is one of the most common and widespread domestic animals, with a population of more than 19 billion as of 2011.[1] Humans keep chickens primarily as a source of food, consuming both their meat and their eggs.</p>
-      </div>
-    </div>
 
-    <div id="box-2">
-      <div class="box" id="Beef">
-    	 <h2 id="p2">Beef</h2>
-    	 <p>Beef is the culinary name for meat from cattle. Beef can be harvested from bulls, heifers or steers. Its acceptability as a food source varies in different parts of the world.Beef from steers and heifers is very similar. According to the most recent National Beef Quality Audit, heifer carcasses had slightly more marbling than steer carcasses, but USDA quality grade was not significantly different.[1] Depending on economics, the number of heifers kept for breeding varies. The meat from older bulls is usually tougher, so it is frequently used for mince (known as ground beef in the United States). </p>
-    	 </div>
-     </div>
-
-     <div id="box-3">
-      <div class="box" id="Sushi">
-      	<h2 id="p3">Sushi</h2>
-      	<p>Sushi (すし, 寿司, 鮨?) is a type of food preparation originating in Japan, consisting of cooked vinegared rice (鮨飯 sushi-meshi) combined with other ingredients (ネタ neta) such as raw seafood, vegetables and sometimes tropical fruits. Ingredients and forms of sushi presentation vary widely, but the ingredient which all sushi have in common is rice (also referred to as shari (しゃり) or sumeshi (酢飯)). </p>
-      </div>
-    </div>
+  <!-- start maincontainer -->
+  <div class="container" id="maincontainer">
+    <div class="row" id="row1">
+      <h2>Our Menu</h2>
+      <div class="col-md-4 col-sm-6 col-xs-12" id="box1">
+        <div id="Chicken">
+          <span class="box-title" id="box-chicken">Chicken</span>
+          <p>The chicken (Gallus gallus domesticus) is a type of domesticated fowl, a subspecies of the red junglefowl. It is one of the most common and widespread domestic animals, with a population of more than 19 billion as of 2011.[1] Humans keep chickens primarily as a source of food, consuming both their meat and their eggs.</p>
+        </div>
+      </div><!--end box1-->
+      <div class="col-md-4 col-sm-6 col-xs-12" id="box2">
+        <div id="Beef">
+          <span class="box-title" id="box-beef">Beef</span>
+          <p>Beef is the culinary name for meat from cattle. Beef can be harvested from bulls, heifers or steers. Its acceptability as a food source varies in different parts of the world.Beef from steers and heifers is very similar. According to the most recent National Beef Quality Audit, heifer carcasses had slightly more marbling than steer carcasses, but USDA quality grade was not significantly different.[1] Depending on economics, the number of heifers kept for breeding varies. The meat from older bulls is usually tougher, so it is frequently used for mince (known as ground beef in the United States). </p>
+        </div>
+      </div><!--end box2-->
+      <div class="col-md-4 col-sm-12 col-xs-12" id="box3">
+        <div id="Sushi">
+          <span class="box-title" id="box-sushi">Sushi</span>
+          <p>Sushi (すし, 寿司, 鮨?) is a type of food preparation originating in Japan, consisting of cooked vinegared rice (鮨飯 sushi-meshi) combined with other ingredients (ネタ neta) such as raw seafood, vegetables and sometimes tropical fruits. Ingredients and forms of sushi presentation vary widely, but the ingredient which all sushi have in common is rice (also referred to as shari (しゃり) or sumeshi (酢飯)). </p>
+        </div>
+      </div><!--end box3-->
+    </div><!-- end row1 -->
+  </div><!-- end container -->
 </body>
 </html>
