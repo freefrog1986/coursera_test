@@ -3,25 +3,15 @@
   margin: 0px;
   padding: 0px;
 }
-
 body {
   font-size: 100%;
 }
-.navbar-header{
-	border: 1px solid black;
+/*start navbar*/
+.navbar {
+	background-color: rgb(150,220,220);
 }
-.container {
-	border:1px solid green;
-}
-
-#header-nav {
-  background-color: rgb(230,150,95);
-  border-radius: 0;
-  border: 0;
-}
-
 .navbar-brand {
-  padding-top: 25px;
+  padding-top: 15px;
 }
 .navbar-brand h1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -29,76 +19,24 @@ body {
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 0;
   line-height: .75;
 }
-
-.navbar-brand h1:hover, .navbar-brand h1:focus {
-  text-decoration: none;
-}
-
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: black;
-  text-align: center;  
-  font-size: 1.75em;
-  margin-bottom: 15px;
-}
-h2 {
-	text-align: center;
-}
-
-.box-title{
-  font-family: Arial, Helvetica, sans-serif;
-  float: right;
-  font-size: 1.25em;
-  text-align: center;
-  width: 150px;
-  padding: 2px;
-  border: 1px solid black;
-  margin-bottom: 5px;
-}
-
+/*end navbar*/
+/*start main containter*/
 p {
   font-family: Arial, Helvetica, sans-serif; 
-  font-size: 1em;
+  font-size: 1.8em;
   padding: 10px;
   clear: both;
 }
 
-#Chicken, #Beef, #Sushi {
-	position: relative;
-	height: 200px;
-	border: 1px solid black;
-	margin:0 auto 10px;
-	overflow: hidden;	
-}
-
 #Chicken {
-  background-color: rgb(205,225,0);
+  position: relative;
+  margin:0 auto 10px;
+  overflow: hidden;	
+  background-color: rgb(170,240,240);
+  height: 1000px;
 }
-
-#Beef {
-  background-color: rgb(0,205,225);
-}
-
-#Sushi {
-  background-color: rgb(225,0,255);
-}
-
-#box-chicken {
-	background-color: rgb(40,50,228);
-	color: yellow;
-}
-
-#box-beef {
-	background-color: rgb(200,70,80);
-	color: yellow;
-}
-
-#box-sushi {
-	background-color: rgb(60,230,60);
-	color: black;
-}
+/*end main containter*/
