@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>报名培训 - OneShow</title>
+    <link href="%E6%8A%A5%E5%90%8D%E5%9F%B9%E8%AE%AD%20-%20OneShow_files/bootstrap.css" rel="stylesheet">
+<link href="%E6%8A%A5%E5%90%8D%E5%9F%B9%E8%AE%AD%20-%20OneShow_files/site.css" rel="stylesheet">
+
+    <script src="%E6%8A%A5%E5%90%8D%E5%9F%B9%E8%AE%AD%20-%20OneShow_files/modernizr-2.js"></script>
+
+    <script src="%E6%8A%A5%E5%90%8D%E5%9F%B9%E8%AE%AD%20-%20OneShow_files/jquery-3.js"></script>
+
+    <link href="%E6%8A%A5%E5%90%8D%E5%9F%B9%E8%AE%AD%20-%20OneShow_files/OneShowCss.css" rel="stylesheet">
+
+    
+</head>
+<body style="font-size:16px;">
+    <script src="%E6%8A%A5%E5%90%8D%E5%9F%B9%E8%AE%AD%20-%20OneShow_files/jquery-3.js"></script>
+
+    <script src="%E6%8A%A5%E5%90%8D%E5%9F%B9%E8%AE%AD%20-%20OneShow_files/bootstrap.js"></script>
+<script src="%E6%8A%A5%E5%90%8D%E5%9F%B9%E8%AE%AD%20-%20OneShow_files/respond.js"></script>
+
+    
+    <script src="%E6%8A%A5%E5%90%8D%E5%9F%B9%E8%AE%AD%20-%20OneShow_files/OneShowScripts.js"></script>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:8080/">OneShow</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost:8080/User/Organization">我的学校</a></li>
+                    <li><a href="http://localhost:8080/User/Organization/Course">报名课程</a></li>
+                    <li><a href="http://localhost:8080/User/Display">我的艺秀</a></li>
+                    <li><a href="http://localhost:8080/User/Class">我的课程</a></li>
+                    <li><a href="http://localhost:8080/User/Orders">我的订单</a></li>
+                    <li><a href="http://localhost:8080/User/UserInfo">个人中心</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        
+
+
+<link href="%E6%8A%A5%E5%90%8D%E5%9F%B9%E8%AE%AD%20-%20OneShow_files/OneShowCss.css" type="text/css" rel="stylesheet">
+<script type="text/javascript">
+    function checkbox_onclick(cbox) {
+        //alert(cbox.checked);
+        if (cbox.value == "tball")
+        {
+            var check = cbox.checked;
+            for(var i =0;;i++)
+            {
+                var bookcbox = document.getElementById("cbx_textbook_"+i);
+                if (bookcbox == null)
+                {
+                    break;
+                }
+                else
+                {
+                    bookcbox.checked = check;
+                }
+            }
+        }
+        else if (cbox.value == "spall")
+        {
+            var check = cbox.checked;
+            for(var i=0;;i++)
+            {
+                var spcboc = document.getElementById("cbx_studyproduct_" + i);
+                if(spcboc == null)
+                {
+                    break;
+                }
+                else
+                {
+                    spcboc.checked = check;
+                }
+            }
+        }
+        var totalprice = parseFloat(document.getElementById("classprice").innerText);
+        for(var i =0;;i++)
+        {
+            var bookcbox = document.getElementById("cbx_textbook_" + i);
+            if (bookcbox == null) {
+                break;
+            }
+            else if(bookcbox.checked)
+            {
+                totalprice = totalprice + (parseFloat(bookcbox.value));
+            }
+        }
+        for (var i = 0; ; i++)
+        {
+            var spcbox = document.getElementById("cbx_studyproduct_" + i);
+            if(spcbox == null)
+            {
+                break;
+            }
+            else if(spcbox.checked)
+            {
+                totalprice = totalprice + (parseFloat(spcbox.value));
+            }
+        }
+        document.getElementById("TotalPrice").value = totalprice;
+        //if(cbox.value!="全选")
+        //{
+        //    if (cbox.checked)
+        //    {
+        //        document.getElementById("totalprice").innerText = parseFloat(document.getElementById("totalprice").innerText) + parseFloat(cbox.value);
+        //    }
+        //    else
+        //    {
+
+        //    }
+        //}
+    }
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="page-header">
+                <h1>报名培训</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+<form action="/User/Organization/Enroll/6706" method="post">            <div class="col-lg-12">
+                <h3>课程信息</h3>
+                <div class="control-group col-lg-3">
+                    <label class="control-label">班级名称:班级6775</label>
+                </div>
+                <div class="control-group col-lg-3">
+                    <label class="control-label">班级编号:201609290006779</label>
+                </div>
+                <div class="control-group col-lg-3">
+                    <label class="control-label">课程类型:课程6776</label>
+                </div>
+                <div class="control-group col-lg-3">
+                    <label class="control-label">上课时间:2016/10/1 8:00:00</label>
+                </div>
+                <div class="control-group col-lg-3">
+                    <label class="control-label">课程价格:</label>
+                    <label class="control-label" id="classprice">160</label>
+                </div>
+                
+            </div>
+            <div class="col-lg-12">
+                <div class="control-group col-lg-6">
+                    <div class="control-group">
+                        <label class="control-label">教材:</label>
+                        <label><input onclick="checkbox_onclick(this)" value="tball" type="checkbox">全选</label>
+                    </div>
+                   
+                    <div class="list-group">
+                                    <div class="list-group-item">
+                                        <label><input id="cbx_textbook_0" onclick="checkbox_onclick(this)" value="6791" type="checkbox">TextBookkkkkkkk6780</label>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <label><input id="cbx_textbook_1" onclick="checkbox_onclick(this)" value="6794" type="checkbox">TextBookkkkkkkk6783</label>
+                                    </div>
+
+                    </div>
+                </div>
+                <div class="control-group col-lg-6">
+                    <div class="control-group">
+                        <label class="control-label">学习用品</label>
+                        <label><input onclick="checkbox_onclick(this)" value="spall" type="checkbox">全选</label>
+                    </div>
+                    <div class="list-group">
+                                    <div class="list-group-item">
+                                        <label><input id="cbx_studyproduct_0" onclick="checkbox_onclick(this)" value="6797" type="checkbox">StudyProduct6786</label>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <label><input id="cbx_studyproduct_1" onclick="checkbox_onclick(this)" value="6800" type="checkbox">StudyProduct6789</label>
+                                    </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="control-group">
+                    <label class="control-label">总价:</label>
+                    <input data-val="true" data-val-number="字段 TotalPrice 必须是一个数字。" data-val-required="TotalPrice 字段是必需的。" id="TotalPrice" name="TotalPrice" readonly="readonly" value="160" type="text">
+                </div>
+                
+            </div>
+            <div class="col-lg-12 controlList">
+                <h3>学生信息</h3>
+                <div class="row">
+                    <div class="control-group col-lg-3" style="margin:0 0 10px 0">
+                        <a href="#"><img alt="学生照片" class="img-thumbnail img-portrait " id="StudentPicture" src="%E6%8A%A5%E5%90%8D%E5%9F%B9%E8%AE%AD%20-%20OneShow_files/1.jpg" style="height:280px; width:280px"></a>
+                        
+                        <div class="control-group" style="margin:3px 0 0 0">
+                            <input id="StudentPicture" name="StudentPicture" value="/TestImg/1.jpg" type="file">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="control-group col-lg-6">
+                        <label class="control-label">姓名:</label>
+                        
+
+
+<input data-val="true" data-val-length="1到10个字符!" data-val-length-max="10" data-val-length-min="1" data-val-required="请填写姓名!" id="PersonalInfoView_Name" name="PersonalInfoView.Name" placeholder="姓名" type="text">
+
+
+                    </div>
+                    <div class="control-group col-lg-6">
+                        <label class="control-label">出生日期:</label>
+                        <input class="text-box single-line" data-val="true" data-val-date="字段 出生日期 必须是日期。" data-val-required="出生日期 字段是必需的。" id="PersonalInfoView_BirthDay" name="PersonalInfoView.BirthDay" value="0001-01-01" type="datetime">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="control-group col-lg-6">
+                        <label class="control-label">性别:</label>
+                        <select data-val="true" data-val-number="字段 性别 必须是一个数字。" data-val-required="性别 字段是必需的。" id="PersonalInfoView_Sex" name="PersonalInfoView.Sex"><option value="1">男</option>
+<option selected="selected" value="0">女</option>
+</select>
+                    </div>
+                    <div class="control-group col-lg-6">
+                        <label class="control-label">身份证号:</label>
+                        
+
+
+<input id="PersonalInfoView_IdentityID" name="PersonalInfoView.IdentityID" placeholder="证件号" type="text">
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="control-group col-lg-6">
+                        <label class="control-label">手机:</label>
+                        <input class="text-box single-line" data-val="true" data-val-length="电话格式不正确!" data-val-length-max="11" data-val-length-min="11" id="UserInfoView_Phone" name="UserInfoView.Phone" type="tel">
+                    </div>
+
+                    <div class="control-group col-lg-6">
+                        <label class="control-label">家庭住址:</label>
+                        
+
+
+<input id="PersonalInfoView_Address" name="PersonalInfoView.Address" placeholder="住址" type="text">
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="control-group col-lg-6">
+                        <label class="control-label">邮箱:</label>
+                        <input class="text-box single-line" data-val="true" data-val-length="1到20个字符!" data-val-length-max="20" data-val-length-min="1" id="UserInfoView_Email" name="UserInfoView.Email" type="email">
+                    </div>
+
+                    <div class="control-group col-lg-6">
+                        <label class="control-label">现学校:</label>
+                        
+
+
+<input id="NowSchool" name="NowSchool" placeholder="" type="text">
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="control-group col-lg-6">
+                        <label class="control-label">现班级:</label>
+                        
+
+
+<input id="NowGrade" name="NowGrade" placeholder="" type="text">
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-12 text-center">
+                <input class="btn btn-default" value="报名" type="submit">
+                <input class="btn btn-default" value="返回" onclick="returnPage()" type="button">
+            </div>
+</form>        
+    </div>
+    <script type="text/javascript">
+        function returnPage()
+        {
+            window.location = "Index";
+        }
+    </script>
+</div>
+
+
+        <hr>
+        
+        <footer>
+            <p>© 2016 - One Show - 展示你的才艺</p>
+        </footer>
+    </div>
+
+   
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Firefox","requestId":"56598c6c951540728b57b3e96cb2f1c0"}
+</script>
+<script type="text/javascript" src="%E6%8A%A5%E5%90%8D%E5%9F%B9%E8%AE%AD%20-%20OneShow_files/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+
+</body></html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://localhost:65322/Organization/Organization/Info -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>组织机构信息 - OneShow</title>
+    <link href="./组织机构信息 - OneShow_files/bootstrap.css" rel="stylesheet">
+<link href="./组织机构信息 - OneShow_files/site.css" rel="stylesheet">
+
+    <script src="./组织机构信息 - OneShow_files/modernizr-2.6.2.js"></script>
+
+    <link href="./组织机构信息 - OneShow_files/OneShowCss.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:65322/">OneShow</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost:65322/Organization/Students/New">新生报名</a></li>
+                    <li><a href="http://localhost:65322/Organization/Organization/Info">组织信息</a></li>
+                    <li><a href="http://localhost:65322/Organization/Affairs">校务管理</a></li>
+                    <li><a href="http://localhost:65322/Organization/Organization/Register">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="page-header">
+                <h1>
+                    组织机构信息
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active">
+                    <a href="http://localhost:65322/Organization/Organization/Info#panel-Info" data-toggle="tab">基本信息</a>
+                </li>
+                <li>
+                    <a href="http://localhost:65322/Organization/Organization/Info#panel-School" data-toggle="tab">校区</a>
+                </li>
+                <li>
+                    <a href="http://localhost:65322/Organization/Organization/Info#panel-ClassRoom" data-toggle="tab">教室</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10">
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="panel-Info">
+                    <form class="form-horizontal">
+                        <div class="control-group">
+                            <label class="control-label">组织机构编码:</label>
+                            <div class="controls">
+                                <input value="Organization.Code" disabled="disabled">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputEmail">组织机构名称:</label>
+                            <div class="controls">
+                                <input type="text" placeholder="组织机构名称" disabled="disabled">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="inputPassword">认证状态:</label>
+                            <div class="controls">
+                                <input value="已认证" disabled="disabled">
+                                <input type="button" class="btn btn-default" value="认证" disabled="disabled">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">经营范围:</label>
+                            <div class="controls">
+                                <input disabled="disabled" value="音乐;美术">
+                                <input type="button" class="btn btn-default" value="变更">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">地址:</label>
+                            <div class="controls">
+                                <input>
+                                <input type="button" class="btn btn-default" value="定位">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">联系电话:</label>
+                            <div class="controls">
+                                <input>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">组织机构描述:</label>
+                            <div class="controls">
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <input type="button" class="btn btn-default" data-toggle="modal" data-target="#_PicturesManagePartialPage" value="图片管理">
+                            </div>
+                            <div class="modal fade" id="_PicturesManagePartialPage" tabindex="-1" role="dialog" aria-labelledby="PictureModalLabel" aria-hidden="true">
+    <div class="modal-dialog" data-backdrop="false">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>图片管理</h3>
+            </div>
+            <div class="modal-body">
+                我是图片管理分页模态框!!!!!
+            </div>
+            <div class="modal-footer">
+                <input type="button" class="btn btn-default" value="保存">
+                <button class="btn btn-default" data-dissmiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                        </div>
+
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="panel-School">
+                    <div class="row">
+                        <input type="button" class="btn btn-default pull-right" value="添加新校区">
+                    </div>
+                    <div style="margin-top:5px" class="row">
+                        <div class="panel-group" id="panel-SchoolList">
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#panel-SchoolList" href="#panel-School-1">
+                                    School1111111111111
+
+
+                                </div>
+                                <div id="panel-School-1" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <label>na wo kan kan ying wen ne ,wo daizhe kongge ,shishi ,haiyou biaodianfuhao ,kankan huibuhui huanhang我只能试试文字看看会不会换行我只能试试文字看看会不会换行我只能试试文字看看会不会换行我只能试试文字看看会不会换行我只能试试文字看看会不会换行我只能试试文字看看会不会换行</label>
+                                        <div class="control-group">
+                                            <input type="button" class="btn btn-default" value="编辑">
+                                            <input type="button" class="btn btn-default" value="删除">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" data-toggle="collapse" data-parent="#panel-SchoolList" href="#panel-School-2">
+                                    School1111111111111
+
+
+                                </div>
+                                <div id="panel-School-2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <label>na wo kan kan ying wen ne ,wo daizhe kongge ,shishi ,haiyou biaodianfuhao ,kankan huibuhui huanhang我只能试试文字看看会不会换行我只能试试文字看看会不会换行我只能试试文字看看会不会换行我只能试试文字看看会不会换行我只能试试文字看看会不会换行我只能试试文字看看会不会换行</label>
+                                        <div class="control-group">
+                                            <input type="button" class="btn btn-default" value="编辑">
+                                            <input type="button" class="btn btn-default" value="删除">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="panel-ClassRoom">
+                    <div class="row">
+
+                        <label>校区:</label>
+                        <select></select>
+                        <input type="button" class="btn btn-default pull-right" value="添加新教室">
+                    </div>
+                    <div class="row">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <label><input type="checkbox">全选</label>
+                                    </th>
+                                    <th><label>教室名称</label></th>
+                                    <th><label>最大容量</label></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><label><input type="checkbox">选择</label></td>
+                                    <td>Room1</td>
+                                    <td>28</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row text-right">
+                        <input type="button" class="btn btn-default" value="删除">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <hr>
+        <footer>
+            <p>© 2016 - One Show - 展示你的才艺</p>
+        </footer>
+    </div>
+
+    <script src="./组织机构信息 - OneShow_files/jquery-3.1.0.js"></script>
+
+    <script src="./组织机构信息 - OneShow_files/bootstrap.js"></script>
+<script src="./组织机构信息 - OneShow_files/respond.js"></script>
+
+    
+    <script src="./组织机构信息 - OneShow_files/OneShowScripts.js"></script>
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Chrome","requestId":"31adb181f96444dd9764655c234cafc0"}
+</script>
+<script type="text/javascript" src="./组织机构信息 - OneShow_files/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+
+</body></html>

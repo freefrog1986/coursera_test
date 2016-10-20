@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 100%;
+}
+
+#schoolname {
+  margin:5px;
+  padding: 5px;
+  background-color: rgb(245,245,245);
+  height: 200px;
+}
+
+/*.main-container,.side-not-container,.side-class-container,.side-container{
+  border: 1px solid black;
+}*/
+
+.side-class-container {
+  padding: 0px;
+}
+
+.main-container,.side-container {
+  margin: 0 auto 15px;
+  float: none;
+}
+
+.main-container {
+  padding: 0px;
+  height: 200px;
+}
+
+.side-container {
+  height: 300px;
+}
+
+.not-row {
+  height: 100px;
+}
+
+.class-row {
+  height: 200px;
+}
+
+/*#schoolname,#sidenot,#sideclass {
+  border: 1px solid black;
+}*/
+
+h3 {
+  font-size: 1.2em;
+}
+
+#sidenot {
+  height: 200px;
+  overflow: hidden; 
+  padding: 5px;
+  margin:5px;
+  border: none; 
+  background-color: rgb(245,245,225);
+}
+
+#sideclass {
+  padding: 0px;
+  height: 100px;
+  overflow: hidden; 
+}
+
+.tile {
+  margin:5px;
+  padding: 5px;
+  background-color: white;
+}
+
+.class-row {
+  margin:5px;
+  padding: 5px;
+  background-color: rgb(245,245,245)
+}
+/*.name-row {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+#schoolname {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.not-row {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+#sidenot {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+#sideclass {
+  border: 1px solid black;
+  margin: 5px;
+}*/
+/*start navbar*/
+/*.navbar {
+	background-color: rgb(150,220,220);
+}
+.navbar-brand {
+  padding-top: 15px;
+}
+.navbar-brand h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(180,40,65);
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0;
+  line-height: .75;
+}
+/*end navbar*/
+/*start main containter*/
+/*p {
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 1.8em;
+  padding: 10px;
+  clear: both;
+}
+
+#Chicken {
+  position: relative;
+  margin:0 auto 10px;
+  overflow: hidden;	
+  background-color: rgb(170,240,240);
+  height: 1000px;
+}*/
+/*end main containter*/*/

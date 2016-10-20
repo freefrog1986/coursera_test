@@ -1,0 +1,162 @@
+﻿* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(245,245,245);
+  font-size: 100%;
+}
+
+#schoolname {
+  margin:5px;
+  padding: 5px;
+  background-color: rgb(255,255,255);
+  height: 200px;
+}
+
+/*.main-container,.side-not-container,.side-class-container,.side-container{
+  border: 1px solid black;
+}*/
+.nav-area {
+  padding-left: 40px;
+  width: 100vw;
+  background-color: rgb(120,200,125);
+}
+
+.navbar-brand {
+  font-size:2em;
+  color:rgb(255,250,95);
+}
+
+.navlist {
+  color: white;
+}
+
+.side-class-container {
+  padding: 0px;
+}
+
+.main-container,.side-container {
+  margin: 0 auto 15px;
+  float: none;
+}
+
+.main-container {
+  padding: 0px;
+  height: 200px;
+}
+
+.side-container {
+  height: 300px;
+}
+
+.not-row {
+  height: 100px;
+}
+
+.class-row {
+  height: 200px;
+}
+
+/*#schoolname,#sidenot,#sideclass {
+  border: 1px solid black;
+}*/
+
+h3 {
+  font-size: 1.2em;
+  margin:0px;
+}
+.class-box-line {
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid green;
+}
+
+#sidenot {
+  height: 200px;
+  overflow: hidden; 
+  padding: 5px;
+  margin:5px;
+  border: none; 
+  background-color: rgb(245,245,215);
+}
+
+
+#sideclass {
+  padding: 0px;
+  height: 100px;
+  overflow: hidden; 
+}
+
+.tile {
+  margin:5px;
+  margin-top: 0px;
+  padding: 5px;
+  background-color: white;
+  background-color: rgb(245,245,245);
+}
+
+.class-row {
+  margin:5px;
+  padding: 5px;
+  background-color: rgb(255,255,255)
+}
+/*.name-row {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+#schoolname {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.not-row {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+#sidenot {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+#sideclass {
+  border: 1px solid black;
+  margin: 5px;
+}*/
+/*start navbar*/
+/*.navbar {
+    background-color: rgb(150,220,220);
+}
+.navbar-brand {
+  padding-top: 15px;
+}
+.navbar-brand h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(180,40,65);
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0;
+  line-height: .75;
+}
+/*end navbar*/
+/*start main containter*/
+/*p {
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 1.8em;
+  padding: 10px;
+  clear: both;
+}
+
+#Chicken {
+  position: relative;
+  margin:0 auto 10px;
+  overflow: hidden; 
+  background-color: rgb(170,240,240);
+  height: 1000px;
+}*/
+/*end main containter*/*/
