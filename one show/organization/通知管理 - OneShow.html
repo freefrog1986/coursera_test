@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://localhost:65322/Organization/Notice/Index -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通知管理 - OneShow</title>
+    <link href="./通知管理 - OneShow_files/bootstrap.css" rel="stylesheet">
+<link href="./通知管理 - OneShow_files/site.css" rel="stylesheet">
+
+    <script src="./通知管理 - OneShow_files/modernizr-2.6.2.js"></script>
+
+    <link href="./通知管理 - OneShow_files/OneShowCss.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:65322/">OneShow</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost:65322/Organization/Students/New">新生报名</a></li>
+                    <li><a href="http://localhost:65322/Organization/Organization/Info">组织信息</a></li>
+                    <li><a href="http://localhost:65322/Organization/Affairs">校务管理</a></li>
+                    <li><a href="http://localhost:65322/Organization/Organization/Register">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        
+
+
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <div class="page-header">
+                <h1>通知管理</h1>
+            </div>
+        </div>
+    </div>
+    <div style="min-height:400px" class="row">
+        
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="tab-content">
+                
+                <div class="tab-pane fade in active" id="tab-NoticeManage">
+                    <form class="form-horizontal">
+                        <div class="row">
+                            <div class="visible-lg visible-md">
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                    <div class="control-group">
+                                        <label class="control-label">发布组织:</label>
+                                        <select></select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                    <div class="control-group">
+                                        <label class="control-label">发布学校:</label>
+                                        <select></select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                    <div class="control-group">
+                                        <label class="control-label">发布时间:</label>
+                                        <select></select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                    <div class="control-group">
+                                        <label class="control-label">发布用户类型:</label>
+                                        <select></select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                    <div class="control-group">
+                                        <label class="control-label">发布用户:XX人</label>
+                                        <input type="button" class="btn btn-default" value="编辑">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="visible-sm visible-xs">
+                                <div class="btn-group">
+                                    <button class="btn dropdown-toggle" data-toggle="dropdown">筛选<span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li style="margin:0px 5px">
+                                            <div data-stoppropagation="true">
+                                                <div class="control-group">
+                                                    <label class="control-label">发布组织:</label>
+                                                    <div class="controls">
+                                                        <select></select>
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label class="control-label">发布学校:</label>
+                                                    <div class="controls">
+                                                        <select></select>
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label class="control-label">发布时间:</label>
+                                                    <div class="controls">
+                                                        <select></select>
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label class="control-label">发布用户类型:</label>
+                                                    <div class="controls">
+                                                        <select></select>
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label class="control-label">发布用户:XX人</label>
+                                                    <div class="controls">
+                                                        <input value="编辑" class="btn btn-default" type="button">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li style="margin:0px 5px">
+                                            <div class="control-group">
+                                                <label class="control-label"></label>
+                                                <div class="controls text-center">
+                                                    <input value="确定" class="btn btn-default" type="button">
+                                                    <input value="取消" class="btn btn-default" type="button">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="control-group text-right">
+                                    <input class="btn btn-default" type="button" value="发布新通知">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="span12">
+                                    <div class="panel-group" id="panel-Notices">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" data-toggle="collapse" data-parent="#panel-Notices" href="#panel-NoticeContent-1">
+                                                Notice.Title
+                                            </div>
+                                            <div class="panel-collapse collapse" id="panel-NoticeContent-1">
+                                                <div class="panel-body">
+                                                    <div>
+                                                            Notice.Content
+                                                    </div>
+                                                    <div class="text-right">
+                                                            <input type="button" class="btn btn-default" value="删除">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" data-toggle="collapse" data-parent="#panel-Notices" href="#panel-NoticeContent-2">
+                                                Notice.Title
+                                            </div>
+                                            <div class="panel-collapse collapse" id="panel-NoticeContent-2">
+                                                <div class="panel-body">
+                                                    Notice.Content
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+        <hr>
+        <footer>
+            <p>© 2016 - One Show - 展示你的才艺</p>
+        </footer>
+    </div>
+
+    <script src="./通知管理 - OneShow_files/jquery-3.1.0.js"></script>
+
+    <script src="./通知管理 - OneShow_files/bootstrap.js"></script>
+<script src="./通知管理 - OneShow_files/respond.js"></script>
+
+    
+    <script src="./通知管理 - OneShow_files/OneShowScripts.js"></script>
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Chrome","requestId":"122aeb2df3ba41dd888feba551a78bfd"}
+</script>
+<script type="text/javascript" src="./通知管理 - OneShow_files/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+
+</body></html>

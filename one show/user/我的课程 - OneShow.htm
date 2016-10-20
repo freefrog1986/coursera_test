@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的课程 - OneShow</title>
+    <link href="%E6%88%91%E7%9A%84%E8%AF%BE%E7%A8%8B%20-%20OneShow_files/bootstrap.css" rel="stylesheet">
+<link href="%E6%88%91%E7%9A%84%E8%AF%BE%E7%A8%8B%20-%20OneShow_files/site.css" rel="stylesheet">
+
+    <script src="%E6%88%91%E7%9A%84%E8%AF%BE%E7%A8%8B%20-%20OneShow_files/modernizr-2.js"></script>
+
+    <script src="%E6%88%91%E7%9A%84%E8%AF%BE%E7%A8%8B%20-%20OneShow_files/jquery-3.js"></script>
+
+    <link href="%E6%88%91%E7%9A%84%E8%AF%BE%E7%A8%8B%20-%20OneShow_files/OneShowCss.css" rel="stylesheet">
+
+    
+</head>
+<body style="font-size:16px;">
+    <script src="%E6%88%91%E7%9A%84%E8%AF%BE%E7%A8%8B%20-%20OneShow_files/jquery-3.js"></script>
+
+    <script src="%E6%88%91%E7%9A%84%E8%AF%BE%E7%A8%8B%20-%20OneShow_files/bootstrap.js"></script>
+<script src="%E6%88%91%E7%9A%84%E8%AF%BE%E7%A8%8B%20-%20OneShow_files/respond.js"></script>
+
+    
+    <script src="%E6%88%91%E7%9A%84%E8%AF%BE%E7%A8%8B%20-%20OneShow_files/OneShowScripts.js"></script>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:8080/">OneShow</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost:8080/User/Organization">我的学校</a></li>
+                    <li><a href="http://localhost:8080/User/Organization/Course">报名课程</a></li>
+                    <li><a href="http://localhost:8080/User/Display">我的艺秀</a></li>
+                    <li><a href="http://localhost:8080/User/Class">我的课程</a></li>
+                    <li><a href="http://localhost:8080/User/Orders">我的订单</a></li>
+                    <li><a href="http://localhost:8080/User/UserInfo">个人中心</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="page-header">
+                <h1>
+                    我的课程
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+            <form class="form-search">
+                <input class="input-medium search-query" type="text"> <button type="submit" class="btn">查找</button>
+            </form>
+            <div class="btn-group">
+                <button data-toggle="dropdown" class="btn dropdown-toggle">筛选<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <div data-stoppropagation="true" style="margin:5px" class="span12">
+                            <label>学校:</label>
+                            <select data-val="true" data-val-number="字段 SelectedSchoolId 必须是一个数字。" data-val-required="SelectedSchoolId 字段是必需的。" id="SelectedSchoolId" name="SelectedSchoolId"><option selected="selected" value="-1">全部</option>
+<option value="1">绘画培训学校</option>
+<option value="2">音乐培训学校</option>
+</select>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-stoppropagation="true" style="margin:5px" class="span12">
+                            <label>课程:</label>
+                            <select id="SelectedCourse" name="SelectedCourse"><option selected="selected" value="全部">全部</option>
+<option value="6879">课程6879</option>
+<option value="6887">课程6887</option>
+</select>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-stoppropagation="true" style="margin:5px" class="span12">
+                            <label>上课时间:</label>
+                            <select data-val="true" data-val-number="字段 SelectedClassTime 必须是一个数字。" data-val-required="SelectedClassTime 字段是必需的。" id="SelectedClassTime" name="SelectedClassTime"><option value="2">全部</option>
+<option value="1">未开课</option>
+<option selected="selected" value="0">正上课</option>
+<option value="-1">已结课</option>
+</select>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-stoppropagation="true" style="margin:5px" class="span12">
+                            <label>课程状态:</label>
+                            <select data-val="true" data-val-number="字段 SelectedClassStatedId 必须是一个数字。" data-val-required="SelectedClassStatedId 字段是必需的。" id="SelectedClassStatedId" name="SelectedClassStatedId"><option selected="selected" value="1">正常</option>
+<option value="0">取消</option>
+</select>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-stoppropagation="true" class="span12" style="text-align:center">
+                            <input value="确定" type="submit">
+                            <input data-stoppropagation="false" value="取消" type="submit">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel-group" id="accordion-MyClasses">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-MyClasses" href="#accordion-element-2">
+                                            <a data-toggle="collapse">素描0101班|2016/9/1 8:00:00</a>
+                                        </div>
+                                        <div id="accordion-element-2" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                OneShow.EntityModel.Organization.SchoolTranscation.CourseInfo|Adrresssci11111111
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-MyClasses" href="#accordion-element-3">
+                                            <a data-toggle="collapse">油画0301班|2016/9/1 10:00:00</a>
+                                        </div>
+                                        <div id="accordion-element-3" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                
+OneShow.EntityModel.Organization.SchoolTranscation.CourseInfo|Adrresssci2222222222
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-MyClasses" href="#accordion-element-4">
+                                            <a data-toggle="collapse">吉他01班|2016/9/1 14:00:00</a>
+                                        </div>
+                                        <div id="accordion-element-4" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                
+OneShow.EntityModel.Organization.SchoolTranscation.CourseInfo|Adrresssci3333333333
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <hr>
+        
+        <footer>
+            <p>© 2016 - One Show - 展示你的才艺</p>
+        </footer>
+    </div>
+
+   
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Firefox","requestId":"8fe9535379964731a0bcc2039583ae48"}
+</script>
+<script type="text/javascript" src="%E6%88%91%E7%9A%84%E8%AF%BE%E7%A8%8B%20-%20OneShow_files/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+
+</body></html>

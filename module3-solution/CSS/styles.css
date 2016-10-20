@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 100%;
+}
+/*start navbar*/
+.navbar {
+	background-color: rgb(150,220,220);
+}
+.navbar-brand {
+  padding-top: 15px;
+}
+.navbar-brand h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(180,40,65);
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0;
+  line-height: .75;
+}
+/*end navbar*/
+/*start main containter*/
+p {
+  font-family: Arial, Helvetica, sans-serif; 
+  font-size: 1.8em;
+  padding: 10px;
+  clear: both;
+}
+
+#Chicken {
+  position: relative;
+  margin:0 auto 10px;
+  overflow: hidden;	
+  background-color: rgb(170,240,240);
+  height: 1000px;
+}
+/*end main containter*/

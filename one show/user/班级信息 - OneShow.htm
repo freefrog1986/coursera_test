@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>班级信息 - OneShow</title>
+    <link href="%E7%8F%AD%E7%BA%A7%E4%BF%A1%E6%81%AF%20-%20OneShow_files/bootstrap.css" rel="stylesheet">
+<link href="%E7%8F%AD%E7%BA%A7%E4%BF%A1%E6%81%AF%20-%20OneShow_files/site.css" rel="stylesheet">
+
+    <script src="%E7%8F%AD%E7%BA%A7%E4%BF%A1%E6%81%AF%20-%20OneShow_files/modernizr-2.js"></script>
+
+    <script src="%E7%8F%AD%E7%BA%A7%E4%BF%A1%E6%81%AF%20-%20OneShow_files/jquery-3.js"></script>
+
+    <link href="%E7%8F%AD%E7%BA%A7%E4%BF%A1%E6%81%AF%20-%20OneShow_files/OneShowCss.css" rel="stylesheet">
+
+    
+</head>
+<body style="font-size:16px;">
+    <script src="%E7%8F%AD%E7%BA%A7%E4%BF%A1%E6%81%AF%20-%20OneShow_files/jquery-3.js"></script>
+
+    <script src="%E7%8F%AD%E7%BA%A7%E4%BF%A1%E6%81%AF%20-%20OneShow_files/bootstrap.js"></script>
+<script src="%E7%8F%AD%E7%BA%A7%E4%BF%A1%E6%81%AF%20-%20OneShow_files/respond.js"></script>
+
+    
+    <script src="%E7%8F%AD%E7%BA%A7%E4%BF%A1%E6%81%AF%20-%20OneShow_files/OneShowScripts.js"></script>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:8080/">OneShow</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost:8080/User/Organization">我的学校</a></li>
+                    <li><a href="http://localhost:8080/User/Organization/Course">报名课程</a></li>
+                    <li><a href="http://localhost:8080/User/Display">我的艺秀</a></li>
+                    <li><a href="http://localhost:8080/User/Class">我的课程</a></li>
+                    <li><a href="http://localhost:8080/User/Orders">我的订单</a></li>
+                    <li><a href="http://localhost:8080/User/UserInfo">个人中心</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="page-header">
+                <h1>班级信息</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="control-group col-lg-6">
+                <label class="control-label">班级名称:班级6792</label>
+            </div>
+            <div class="control-group col-lg-6">
+                <label class="control-label">班级编号:201609290006796</label>
+
+            </div>
+            <div class="control-group col-lg-6">
+                <label class="control-label">所属校区:</label>
+
+            </div>
+            <div class="control-group col-lg-6">
+                <label class="control-label">教室:Address6796</label>
+
+            </div>
+            <div class="control-group col-lg-6">
+                <label class="control-label">开始时间:2016/10/19 20:01:40</label>
+
+            </div>
+            <div class="control-group col-lg-6">
+                <label class="control-label">开始时间:2016/11/18 20:01:40</label>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>课程安排</h3>
+            <div>
+                    <style type="text/css">
+        table.classSchedule{
+            min-width:600px
+        }
+        table.classSchedule td{
+            max-width:10px;
+        }
+        table.classSchedule label{
+            font-size:medium;
+        }
+        table.classSchedule label.label-day{
+            font-size:medium;
+        }
+    </style>
+<div class="row">
+    <div class="col-lg-12 carousel slide" id="classSchedule" style="min-height:400px;" data-interval="false">
+        <ol class="carousel-indicators">
+                            <li data-target="#classschedule" data-slide-to="0" class="active"></li>
+                            <li data-target="#classschedule" data-slide-to="1"></li>
+
+        </ol>
+        <div class="col-lg-12 carousel-inner">
+                            <div class="item active">
+                                <table class="table table-bordered classSchedule">
+                                    <caption class="text-center">
+                                        <h3>
+                                            2016 年 10 月份
+                                        </h3>
+                                    </caption>
+                                    <thead>
+                                        <tr>
+                                            <th style="max-width:50px">
+                                                <label>星期一</label>
+                                            </th>
+                                            <th style="max-width:50px">
+                                                <label>星期二</label>
+                                            </th>
+                                            <th style="max-width:50px">
+                                                <label>星期三</label>
+                                            </th>
+                                            <th style="max-width:50px">
+                                                <label>星期四</label>
+                                            </th>
+                                            <th style="max-width:50px">
+                                                <label>星期五</label>
+                                            </th>
+                                            <th style="max-width:50px">
+                                                <label>星期六</label>
+                                            </th>
+                                            <th style="max-width:50px">
+                                                <label>星期日</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                                    <td style="background-color:crimson">
+                                                                        <p>
+                                                                            <label class="label-day">
+                                                                                1 号<br>
+                                                                            </label>
+                                                                        </p>
+                                                                        <p>
+                                                                            <label>
+                                                                                08:00:00
+                                                                            </label>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td style="background-color:crimson">
+                                                                        <p>
+                                                                            <label class="label-day">
+                                                                                2 号<br>
+                                                                            </label>
+                                                                        </p>
+                                                                        <p>
+                                                                            <label>
+                                                                                08:00:00
+                                                                            </label>
+                                                                        </p>
+                                                                    </td>
+
+                                            </tr>
+                                                        <tr>
+                                                                    <td>
+                                                                        <label>
+                                                                            3 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            4 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            5 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            6 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            7 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            8 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            9 号
+                                                                        </label>
+                                                                    </td>
+                                                        </tr>
+                                                        <tr>
+                                                                        <td style="background-color:crimson">
+                                                                            <p>
+                                                                                <label class="label-day">
+                                                                                    10 号<br>
+                                                                                </label>
+                                                                            </p>
+                                                                            <p>
+                                                                                <label class="label-day">
+                                                                                    14:00:00
+                                                                                </label>
+                                                                            </p>
+
+                                                                        </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            11 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            12 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            13 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            14 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            15 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            16 号
+                                                                        </label>
+                                                                    </td>
+                                                        </tr>
+                                                        <tr>
+                                                                    <td>
+                                                                        <label>
+                                                                            17 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            18 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            19 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            20 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            21 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            22 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            23 号
+                                                                        </label>
+                                                                    </td>
+                                                        </tr>
+                                                        <tr>
+                                                                    <td>
+                                                                        <label>
+                                                                            24 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            25 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            26 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            27 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            28 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            29 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            30 号
+                                                                        </label>
+                                                                    </td>
+                                                        </tr>
+                                                        <tr>
+                                                                    <td>
+                                                                        <label>
+                                                                            31 号
+                                                                        </label>
+                                                                    </td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div class="item">
+                                <table class="table table-bordered classSchedule">
+                                    <caption class="text-center">
+                                        <h3>
+                                            2016 年 11 月份
+                                        </h3>
+                                    </caption>
+                                    <thead>
+                                        <tr>
+                                            <th style="max-width:50px">
+                                                <label>星期一</label>
+                                            </th>
+                                            <th style="max-width:50px">
+                                                <label>星期二</label>
+                                            </th>
+                                            <th style="max-width:50px">
+                                                <label>星期三</label>
+                                            </th>
+                                            <th style="max-width:50px">
+                                                <label>星期四</label>
+                                            </th>
+                                            <th style="max-width:50px">
+                                                <label>星期五</label>
+                                            </th>
+                                            <th style="max-width:50px">
+                                                <label>星期六</label>
+                                            </th>
+                                            <th style="max-width:50px">
+                                                <label>星期日</label>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                            <td></td>
+                                                                    <td style="background-color:crimson">
+                                                                        <p>
+                                                                            <label class="label-day">
+                                                                                1 号<br>
+                                                                            </label>
+                                                                        </p>
+                                                                        <p>
+                                                                            <label>
+                                                                                08:00:00
+                                                                            </label>
+                                                                        </p>
+                                                                    </td>
+                                                                <td>
+                                                                    <label>
+                                                                        2 号
+                                                                    </label>
+                                                                </td>
+                                                                <td>
+                                                                    <label>
+                                                                        3 号
+                                                                    </label>
+                                                                </td>
+                                                                <td>
+                                                                    <label>
+                                                                        4 号
+                                                                    </label>
+                                                                </td>
+                                                                <td>
+                                                                    <label>
+                                                                        5 号
+                                                                    </label>
+                                                                </td>
+                                                                <td>
+                                                                    <label>
+                                                                        6 号
+                                                                    </label>
+                                                                </td>
+
+                                            </tr>
+                                                        <tr>
+                                                                    <td>
+                                                                        <label>
+                                                                            7 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            8 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            9 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            10 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            11 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            12 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            13 号
+                                                                        </label>
+                                                                    </td>
+                                                        </tr>
+                                                        <tr>
+                                                                    <td>
+                                                                        <label>
+                                                                            14 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            15 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            16 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            17 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            18 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            19 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            20 号
+                                                                        </label>
+                                                                    </td>
+                                                        </tr>
+                                                        <tr>
+                                                                    <td>
+                                                                        <label>
+                                                                            21 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            22 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            23 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            24 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            25 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            26 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            27 号
+                                                                        </label>
+                                                                    </td>
+                                                        </tr>
+                                                        <tr>
+                                                                    <td>
+                                                                        <label>
+                                                                            28 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            29 号
+                                                                        </label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <label>
+                                                                            30 号
+                                                                        </label>
+                                                                    </td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+                            </div>
+
+        </div>
+        <a class="carousel-control left" href="#classSchedule" data-slide="prev">‹</a>
+        <a class="carousel-control right" href="#classSchedule" data-slide="next">›</a>
+    </div>
+    
+</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>教材</h3>
+            <div class="list-group" id="textBooksList">
+                        <div class="list-group-item">
+                            <a href="#Codeeeeeeee6797">TextBookkkkkkkk6797</a>
+                        </div>
+                        <div class="list-group-item">
+                            <a href="#Codeeeeeeee6800">TextBookkkkkkkk6800</a>
+                        </div>
+
+            </div>
+            <div class="col-lg-6">
+                <h3>学习用品</h3>
+                <div class="list-group" id="StudyProductsList">
+                            <div class="list-group-item">
+                                <a href="#Codeeeee6803">StudyProduct6803</a>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="#Codeeeee6806">StudyProduct6806</a>
+                            </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <hr>
+        
+        <footer>
+            <p>© 2016 - One Show - 展示你的才艺</p>
+        </footer>
+    </div>
+
+   
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Firefox","requestId":"16f5f0ea588f410296d8368c37cbb56c"}
+</script>
+<script type="text/javascript" src="%E7%8F%AD%E7%BA%A7%E4%BF%A1%E6%81%AF%20-%20OneShow_files/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+
+</body></html>

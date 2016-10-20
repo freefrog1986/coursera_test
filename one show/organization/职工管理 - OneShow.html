@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://localhost:65322/Organization/Staffs/Index -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>职工管理 - OneShow</title>
+    <link href="./职工管理 - OneShow_files/bootstrap.css" rel="stylesheet">
+<link href="./职工管理 - OneShow_files/site.css" rel="stylesheet">
+
+    <script src="./职工管理 - OneShow_files/modernizr-2.6.2.js"></script>
+
+    <link href="./职工管理 - OneShow_files/OneShowCss.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:65322/">OneShow</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost:65322/Organization/Students/New">新生报名</a></li>
+                    <li><a href="http://localhost:65322/Organization/Organization/Info">组织信息</a></li>
+                    <li><a href="http://localhost:65322/Organization/Affairs">校务管理</a></li>
+                    <li><a href="http://localhost:65322/Organization/Organization/Register">注册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="page-header">
+                <h1>职工管理</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-xs-3 col-sm-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active">
+                    <a data-toggle="tab" href="http://localhost:65322/Organization/Staffs/Index#tab-Staff">职工管理</a>
+                </li>
+                <li>
+                <a data-toggle="tab" href="http://localhost:65322/Organization/Staffs/Index#tab-StaffType">职工类别管理</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="http://localhost:65322/Organization/Staffs/Index#tab-StaffLevel">职工等级管理</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="http://localhost:65322/Organization/Staffs/Index#tab-StaffState">职工状态管理</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-10 col-md-10 col-xs-9 col-sm-9">
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="tab-Staff">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>职工管理</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 visible-lg visible-md">
+                            <div class="col-lg-2 col-md-2">
+                                <div class="control-group">
+                                    <label class="control-label">学校:</label>
+                                    <select></select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="control-group">
+                                    <label class="control-label">类别:</label>
+                                    <select></select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="control-group">
+                                    <label class="control-label">等级:</label>
+                                    <select></select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="control-group">
+                                    <label class="control-label">状态:</label>
+                                    <select></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 visible-sm visible-xs">
+                            <div class="btn-group">
+                                <button class="btn dropdown-toggle" data-toggle="dropdown">筛选<span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li style="margin:0px 5px">
+                                        <div data-stoppropagation="true">
+                                            <div class="control-group">
+                                                <label class="control-label">学校:</label>
+                                                <select></select>
+                                            </div>
+                                            <div class="control-group">
+                                                <label class="control-label">类别:</label>
+                                                <select></select>
+                                            </div>
+                                            <div class="control-group">
+                                                <label class="control-label">等级:</label>
+                                                <select></select>
+                                            </div>
+                                            <div class="control-group">
+                                                <label class="control-label">状态:</label>
+                                                <select></select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li style="margin:0px 5px">
+                                        <div class="control-group">
+                                            <label class="control-label"></label>
+                                            <div class="controls text-center">
+                                                <input value="确定" class="btn btn-default" type="button">
+                                                <input value="取消" class="btn btn-default" type="button">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div style="margin:10px 0" class="col-lg-12">
+                            <form>
+                                <div style="max-width:327px" class="input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">
+                                            Go!
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel-group" id="panel-Staff">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" data-toggle="collapse" data-parent="#panel-Staff" href="#panel-Staff-1">
+                                        Staff.Picture | Staff.Name
+                                    </div>
+                                    <div class="panel-collapse collapse" id="panel-Staff-1">
+                                        <div class="panel-body">
+                                                Staff.Courses | .....
+                                            <div class="text-right">
+                                                <a href="http://localhost:65322/Organization/Staffs/Index#">更多&gt;&gt;&gt;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" data-toggle="collapse" data-parent="#panel-Staff" href="#panel-Staff-2">
+                                        Staff.Picture | Staff.Name
+                                    </div>
+                                    <div class="panel-collapse collapse" id="panel-Staff-2">
+                                        <div class="panel-body">
+                                                Staff.Courses | .....
+                                            <div class="text-right">
+                                                <a href="http://localhost:65322/Organization/Staffs/Index#">更多&gt;&gt;&gt;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab-StaffType">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>职工类别管理</h3>
+                        </div>                       
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="control-group text-right">
+                                <input type="button" class="btn btn-default" value="添加新类别">
+                            </div>
+                            <div class="panel-group" id="panel-StaffType">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" data-toggle="collapse" data-parent="#panel-StaffType" href="#panel-StaffType-1">
+                                        StaffType.Name
+                                    </div>
+                                    <div class="panel-collapse collapse text-right" id="panel-StaffType-1">
+                                        <div class="panel-body">
+                                            <input value="删除" type="button" class="btn btn-default">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" data-toggle="collapse" data-parent="#panel-StaffType" href="#panel-StaffType-2">
+                                        StaffType.Name
+                                    </div>
+                                    <div class="panel-collapse collapse text-right" id="panel-StaffType-2">
+                                        <div class="panel-body">
+                                            <input value="删除" type="button" class="btn btn-default">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab-StaffLevel">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>职工等级管理</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="control-group text-right">
+                            <input type="button" class="btn btn-default" value="添加新等级">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel-group" id="panel-StaffLevel">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" data-toggle="collapse" data-parent="#panel-StaffLevel" href="#panel-StaffLevel-1">
+                                        StaffLevel.Name
+                                    </div>
+                                    <div class="panel-collapse collapse text-right" id="panel-StaffLevel-1">
+                                        <div class="panel-body">
+                                            <input value="删除" type="button" class="btn btn-default">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" data-toggle="collapse" data-parent="#panel-StaffLevel" href="#panel-StaffLevel-2">
+                                        StaffLevel.Name
+                                    </div>
+                                    <div class="panel-collapse collapse text-right" id="panel-StaffLevel-2">
+                                        <div class="panel-body">
+                                            <input value="删除" type="button" class="btn btn-default">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab-StaffState">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>职工状态管理</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="control-group text-right">
+                            <input type="button" class="btn btn-default" value="添加新状态">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel-group" id="panel-StaffState">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" data-toggle="collapse" data-parent="#panel-StaffState" href="#panel-StaffState-1">
+                                        StaffState.Name
+                                    </div>
+                                    <div class="panel-collapse collapse text-right" id="panel-StaffState-1">
+                                        <div class="panel-body">
+                                            <input value="删除" type="button" class="btn btn-default">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" data-toggle="collapse" data-parent="#panel-StaffState" href="#panel-StaffState-2">
+                                        StaffState.Name
+                                    </div>
+                                    <div class="panel-collapse collapse text-right" id="panel-StaffState-2">
+                                        <div class="panel-body">
+                                            <input value="删除" type="button" class="btn btn-default">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <hr>
+        <footer>
+            <p>© 2016 - One Show - 展示你的才艺</p>
+        </footer>
+    </div>
+
+    <script src="./职工管理 - OneShow_files/jquery-3.1.0.js"></script>
+
+    <script src="./职工管理 - OneShow_files/bootstrap.js"></script>
+<script src="./职工管理 - OneShow_files/respond.js"></script>
+
+    
+    <script src="./职工管理 - OneShow_files/OneShowScripts.js"></script>
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Chrome","requestId":"2ba473a291f94d279bd096bb6a05c620"}
+</script>
+<script type="text/javascript" src="./职工管理 - OneShow_files/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+
+</body></html>
